@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -21,16 +20,25 @@
   </head>
   <body>
     <!-- Preloader -->
-  
-     <div class="intro">
+    <!-- Preloader chuyen trang -->
+    <div class="intro" style="display: none;">
   <div class="intro__content">
-     
+
     <img src="images/round-button.png" class="intro__logo" alt="">
     <h3 class="intro__contet-title">KANPANI GIRLS</h3>
   </div>
   
 </div>
-   
+
+
+    <div class="loading-chuyentrang" style="display:none;">
+      <div class="base-loading-chuyentrang d-flex h-100">
+        <div class="block-content-loading my-auto text-center align-items-center w-100">
+          <img src="img/logo-new-2.svg" style="width: 200px;height: 90px;" class="logo-2 logo-chuyentrang" alt="">
+        </div>
+      </div>
+    </div>
+    <!-- End of Preloader chuyen trang -->
     <!-- End of Preloader -->
     <div class="cursor"></div>
     <!-- ========== HEADER ========== -->
@@ -174,7 +182,7 @@
                         <div class="image-with-effects">
                           <div class="image-wrapper">
                             <img src="images/text-kangpani.png" class="img-fluid img title-for-desktop" alt="">
-                            <img src="images/text-kangpani-phone.png" class="img-fluid img title-for-phone" alt="">
+                            <img src="images/text-kangpani-phone-1.png" class="img-fluid img title-for-phone" alt="">
                           </div>
                         </div>
                       </div>
@@ -209,7 +217,13 @@
                         <div class="img-tw">
                           <img src="images/round-button.png" alt="">
                         </div>
-                        <span class="button-tw-below"> <a href="">follow us 等</a> </span>
+                        <span class="button-tw-below"> 
+                          <a href="">
+                          <img src="images/button-follow.png" alt="">
+                          </a>
+
+
+                         </span>
                       </div>
                       
                     </div>
@@ -230,14 +244,14 @@
       <script src="js/jquery-3.5.1.min.js"></script>
       <script src="js/bootstrap.min.js"></script>
       <script src="js/owl.carousel.js"></script>
-       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
       <!-- Custom scripts  -->
       <script src="js/main.js"></script>
-       <script src="js/intro.js"></script>
       <script src="js/countdown.js"></script>
      
       <script src="js/effect-text.js"></script>
+      <script src="js/intro.js"></script>
       <script src="js/sakura.js"></script>
       <script>
         var sakura = new Sakura('.sakura', {
