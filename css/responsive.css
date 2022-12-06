@@ -135,7 +135,9 @@
 .title-for-phone {
   display: block;
 }
-
+.image-with-effects .image-wrapper img {
+    width: 100%;
+}
 
 	
 .title-for-desktop {
