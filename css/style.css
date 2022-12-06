@@ -18,7 +18,9 @@ Other Pages
 ================================================================== */
 
 /*============================ Hero Section ============================*/
-
+.content-page {
+  perspective: 1000px;
+}
 .bg-slide {
   background: url(../images/BG-TOP-5.jpg);
   background-attachment: fixed;
@@ -28,11 +30,17 @@ Other Pages
   background-size: cover;
   width: 100%;
   overflow: hidden;
+  background-size: cover;
+  transition: all 100ms linear;
+  -webkit-transition: all 100ms linear;
+  -moz-transition: all 100ms linear;
+  -o-transition: all 100ms linear;
 }
 
 .text-slide {
   position: absolute;
   left: 0;
+  right: 0;
   bottom: 330px;
   z-index: 1;
   display: block;
@@ -75,6 +83,7 @@ Other Pages
   -webkit-transition-property: transform;
   transition-property: transform;
   min-width: 1000px;
+  text-align: center;
 }
 .image-with-effects .image-wrapper::before {
   content: "";
@@ -82,7 +91,7 @@ Other Pages
   background: #40E0D0;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #FF0080, #FF8C00, #40E0D0);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #FF0080, #FF8C00, #40E0D0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  opacity: 0.2;
+  opacity: 0.1;
   top: 0;
   left: 0;
   width: 150%;
@@ -93,7 +102,7 @@ Other Pages
   animation: shine 4s linear infinite;
 }
 .image-with-effects .image-wrapper img {
-  width: 100%;
+  width: 80%;
   height: auto;
   opacity: 1;
 }
@@ -353,7 +362,7 @@ Other Pages
   padding: 6px 10px;
   position:relative;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 600;
   top: -34px;
   z-index: 9;
 }
@@ -426,9 +435,10 @@ Other Pages
   justify-content: center;
   z-index: 99999;
   align-items: center;
- background: #C6FFDD;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ background: #ee9ca7;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ffdde1, #ee9ca7);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ffdde1, #ee9ca7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 
 
 }
@@ -444,8 +454,8 @@ background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD); /* W3C, IE 10+
 }
 
 .intro__contet-title {
-  font-size: 3rem;
-  line-height: 50px;
+  font-size: 2.4rem;
+  line-height: 43px;
   font-weight: bold;
   padding-left: 0px;
   text-transform: uppercase;
